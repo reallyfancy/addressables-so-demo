@@ -2,11 +2,11 @@
 
 This is a minimal demonstration of the principles of keeping a persistent, shared instance of a ScriptableObject in memory across multiple scenes when using Addressables.
 
-## Compatibility:
+## Compatibility
 
 Created with Unity 2021.2.0f1 and Addressables 1.19.17.
 
-## Instructions:
+## Instructions
 
 * Build the Addressables for this project.
 * If you're testing this in the Editor, set the Addressables *Play mode* option to *Use Existing Build*.
