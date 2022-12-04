@@ -23,7 +23,7 @@ public class SceneLoader : MonoBehaviour
         }
 
         AppendText("Loading first Addressable scene");
-		AsyncOperationHandle<SceneInstance> firstLoadHandle = Addressables.LoadSceneAsync("Assets/AddScene1.unity", LoadSceneMode.Additive);
+	AsyncOperationHandle<SceneInstance> firstLoadHandle = Addressables.LoadSceneAsync("Assets/AddScene1.unity", LoadSceneMode.Additive);
         yield return firstLoadHandle;
 
         // Allow time to update the text area :)
@@ -34,7 +34,7 @@ public class SceneLoader : MonoBehaviour
         yield return unloadHandle;
 
         AppendText("Loading second Addressable scene");
-		AsyncOperationHandle<SceneInstance> secondLoadHandle = Addressables.LoadSceneAsync("Assets/AddScene2.unity", LoadSceneMode.Additive);
+	AsyncOperationHandle<SceneInstance> secondLoadHandle = Addressables.LoadSceneAsync("Assets/AddScene2.unity", LoadSceneMode.Additive);
         yield return secondLoadHandle;
     }
 
