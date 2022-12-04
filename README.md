@@ -1,6 +1,12 @@
 # Addressables/ScriptableObjects demo
 
-A minimal demonstration of keeping a persistent, shared instance of a ScriptableObject in memory across multiple scenes when using Addressables in Unity 2021.2.
+If you store runtime state in an Addressable ScriptableObject, you must ensure that you always have at least one reference to the ScriptableObject at all times. This prevents the Addressables system from unloading/reloading the ScriptableObject, which can lead to data loss. This problem occurs most commonly when changing scenes.
+
+This minimal Unity project demonstrates how to preload a single instance of an Addressable ScriptableObject and then keep a reference to it that persists between scene changes. This ensures that the ScriptableObject remains in memory throughout the lifetime of an application. 
+
+You can test this by toggling the preloading on and off, and see the effect that this change has on the two Addressable scenes.
+
+The project also shows how to explicitly assign an Addressable ScriptableObject to a common AssetBundle, and how to load that AssetBundle on startup via its label.
 
 ## Compatibility
 
