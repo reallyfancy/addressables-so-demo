@@ -13,7 +13,6 @@ public class ScriptableObjectUser : MonoBehaviour
         referenceToScriptableObject.exampleData = exampleData;
 
         var sceneLoader = (SceneLoader)FindObjectOfType(typeof(SceneLoader));
-
-		sceneLoader.AppendText("ScriptableObject instance ID is " + referenceToScriptableObject.GetInstanceID() + ", old data was '" + oldData + "', new data is '" + referenceToScriptableObject.exampleData + "'");
+	sceneLoader.AppendText("ScriptableObject instance ID is " + referenceToScriptableObject.GetInstanceID() + ", old data was '" + oldData + "', new data is '" + referenceToScriptableObject.exampleData + "'");
     }
 }
