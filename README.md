@@ -1,6 +1,6 @@
 # Addressables/ScriptableObjects demo
 
-This is a minimal demonstration of the principles of keeping a persistent, shared instance of a ScriptableObject in memory across multiple scenes when using Addressables.
+A minimal demonstration of keeping a persistent, shared instance of a ScriptableObject in memory across multiple scenes when using Addressables in Unity 2021.2.
 
 ## Compatibility
 
